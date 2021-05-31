@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eq Buy</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/fontawesome.min.css" integrity="sha512-shT5e46zNSD6lt4dlJHb+7LoUko9QZXTGlmWWx0qjI9UhQrElRb+Q5DM7SVte9G9ZNmovz2qIaV7IWv0xQkBkw==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Asul&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asul&family=Montserrat:wght@100;200&display=swap" rel="stylesheet">>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="container-fliud">
+
+       <header  style="background-color:#e67e22; position: fixed; left: 0; right: 0; top: 0; z-index: 9999; box-shadow: 0px 2px 5px 0px rgba(66,66,66,1);">
+        <div class="container d-flex flex-column flex-md-row align-items-center p-2 ">
+            <p class="h5 my-0 me-md-auto fw-normal">
+                <img src="./img/ghana.svg" alt="" style="width: 100px; height: 50px; object-fit: contain;">
+            </p>
+            <nav class="my-2 my-md-0 me-md-3">
+              <a class="p-2 text-dark" href="#"><i class="fa fa-comments" aria-hidden="true" style="font-size: 30px; color: #fff;"></i></a>
+              <a class="p-2 text-dark" href="#"><i class="fa fa-bell" aria-hidden="true" style="font-size: 30px; color: #fff;"></i></a>
+              <a class="p-2 text-dark" href="#"><i class="fa fa-credit-card" aria-hidden="true" style="font-size: 30px; color: #fff;"></i></a>
+              <a class="p-2 text-dark" href="#"><i class="fa fa-bars" aria-hidden="true" style="font-size: 30px; color: #fff;"></i></a>
+              <a class="p-2 text-dark" href="#"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 30px; color: #fff;" ></i></a>
+            </nav>
+            <a class="btn btn-primary" style="background-color: #2c3e50; border: none; padding: 10px; width: 100px;" href="#">Sell</a>
+        </div>
+      </header>
+
+<div class="container section" style="margin-top:90px;">
+  <div class="row">
+    <div class="col-md-4" id="sidebar" style="margin-right: 20px; height: 80vh; width: 400px;">
+        <div class="bg-white rounded-lg shadow-sm" style="padding: 10px">
+           <ul>
+               <li><a href="contact-details.html" class="active">Contact details</a></li>
+               <li><a href="company-details.html">Company details</a></li>
+               <li><a href="phone-settings.html">Mobile phone settings</a></li>
+               <li><a href="#">Chat settings</a></li>
+               <li><a href="#">Feedback settings</a></li>
+               <li><a href="#">Social networks</a></li>
+               <li><a href="#">Notification settings</a></li>
+               <li><a href="#">Change password</a></li>
+               <li><a href="#">Manage my account</a></li>
+               <li><a href="#">About Eq Buy</a></li>
+               <li><a href="#">Sign out</a></li>
+           </ul>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="bg-white rounded-lg shadow-sm" style="padding: 40px;">
+           <div class="sell-header" style="color: #000;">
+            <h5 style="font-weight: bolder;"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 20px; margin-right: 10px;"></i>Company Details</h5> 
+           </div>
+            <hr>
+           
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-2"></div>
+               <div class="col-md-8">
+                    <form method="POST">
+                        <div class="form-group">
+                            <label for="companyName">Company name</label>
+                            <input type="text" class="form-control" name="companyName" id="companyName" placeholder="Company name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="domain">Create your own domain</label>
+                            <input type="test" class="form-control" name="domain" id="domain" placeholder="Create your own domain">
+                        </div>
+                        <div class="form-group">
+                           <textarea name="about" id="about" cols="5" rows="5" class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group" style="margin-top: 20px;">
+                            <h6 style="font-weight: bolder;">Delivery within seller's region available</h6>
+                        </div>
+                        <div class="form-group">
+                           <label for="yes"><input type="checkbox" name="yes" id="yes"> Yes </label>
+                        </div>
+                       <div class="yes" id="yesOption" style="display: none;">
+                        <div class="form-group">
+                            <label for="days">Delivery estimates (days)</label>
+                            <input type="text" class="form-control" id="days" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fees">Fees</label>
+                            <input type="text" class="form-control" id="fees" required>
+                        </div>
+                       </div>
+                       <div class="form-group" style="margin-top: 20px; margin-bottom: 20px;">
+                           <h5>Working days</h5>
+                       </div>
+                       <div class="form-group">
+                        <label for="mon" style="margin-right: 10px;"><input type="checkbox" name="mon" id="mon"> Mon</label>
+                        <label for="mon" style="margin-right: 10px;"><input type="checkbox" name="mon" id="mon"> Tue</label>
+                        <label for="mon" style="margin-right: 10px;"><input type="checkbox" name="mon" id="mon"> Wed</label>
+                        <label for="mon" style="margin-right: 10px;"><input type="checkbox" name="mon" id="mon"> Thur</label>
+                        <label for="mon" style="margin-right: 10px;"><input type="checkbox" name="mon" id="mon"> Fri</label>
+                        <label for="mon" style="margin-right: 10px;"><input type="checkbox" name="mon" id="mon"> Sat</label>
+                        <label for="mon"style="margin-right: 10px;"><input type="checkbox" name="mon" id="mon">  Sun</label>
+                     </div>
+                     <div class="form-group" style="margin-top: 20px; margin-bottom: 20px;">
+                        <h5>Working hours</h5>
+                        <div class="range" style="margin-top: 20px;" >
+                            <input type="range" class="form-range" id="customRange1" />
+                          </div>
+                    </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary form-control" style="background-color: #e67e22; border: none; padding:10px;">APPLY</button>
+                        </div>
+                    </form>
+               </div>
+               <div class="col-md-2"></div>
+            </div>
+          
+        </div>
+    </div>
+  </div>
+</div>
+
+<script src="./js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js" integrity="sha512-pafh0hrrT9ZPZl/jx0cwyp7N2+ozgQf+YK94jSupHHLD2lcEYTLxEju4mW/2sbn4qFEfxJGZyIX/yJiQvgglpw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/cjs/popper.min.js" integrity="sha512-Wolz9yzdoTL6avwJTzh/0yUSqZ458EVnKgsAnOCs1H+A3VEtGDvPvD0klPKU5TkZ3BfnFPcxmr74S/YiPiTNBA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</body>
+</html>

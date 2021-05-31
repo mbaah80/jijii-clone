@@ -1,0 +1,142 @@
+
+body{
+    background-color: rgb(235, 233, 233);
+    font-family: 'Montserrat', sans-serif;
+}
+.sidebar {
+  width: 25%;
+  height: 100vh;
+  margin-right: 20px;
+  box-shadow: 0px 0px 4px 2px rgba(158,158,158,1);
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar li {
+    list-style: none;
+    color: #fff;
+}
+.sidebar a{
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 50px;
+}
+#btn{
+    background-color:#2c3e50;
+    color: #fff;
+    border: none;
+    border-radius:5px ;
+}
+#btnAd{
+    width: 400px; 
+    padding: 10px; 
+    background-color:#2c3e50; 
+    border: none;
+}
+#btnAd:hover{
+    background-color:#f7c69b;
+    color: #fff;
+    border: none;
+}
+#welcome{
+    box-shadow: 0px 0px 4px 2px rgba(158,158,158,1);
+    margin-bottom: 20px;
+    padding: 50px;
+}
+#ads{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 4px 2px rgba(158,158,158,1);
+    text-align: center;
+    background-color:#2c3e50;
+    color: #fff;
+    padding: 10px;
+}
+#plus{
+    font-size: 80px;
+}
+small{
+    font-size: 12px;
+}
+footer{
+    padding: 50px;
+    background-color:#e67e22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#2c3e50;
+}
+footer li{
+    list-style: none;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+#google{
+  padding: 10px; 
+  background-color: #fff; 
+  border: none; 
+  color: #000;
+  box-shadow: 0px 0px 4px 2px rgb(194, 194, 194);
+}
+#google:hover{
+    padding: 10px; 
+    background-color: rgb(236, 236, 236); 
+    border: none; 
+    color: #000;
+    box-shadow: 0px 0px 4px 2px rgb(194, 194, 194);
+  }
+#facebook{
+   padding: 10px;
+   background-color: #3b5998;
+   border: none;
+   
+}
+#facebook:hover{
+    padding: 10px;
+    background-color: #253b6d;
+    border: none;
+    
+ }
+ .sell-header{
+     display: flex;
+ }
+ .sell-header li{
+     list-style: none;
+     margin-right: 10px;
+ }
+ .sell-header a{
+     text-decoration: none;
+ }
+ .mr{
+     margin-left: 60px;
+     
+ }
+ #sidebar li{
+    list-style: none;
+    padding: 20px;
+    border-bottom: 1px solid #ebeaea;
+ }
+ #sidebar a{
+     text-decoration: none;
+     color: #000;
+ }
+ #listing{
+    box-shadow: 0px 0px 4px 2px rgb(218, 216, 216);
+    padding: 10px;
+ }
+ #listing:hover{
+    box-shadow: 2px 6px 31px 4px rgba(125,125,125,1);
+ }
+ .form-group{
+     margin-bottom: 10px;
+ }
+ .active a{
+     color: #0c9e38;
+ }
+    
+
